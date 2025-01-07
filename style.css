@@ -1,3 +1,38 @@
+@font-face {
+  font-family: 'brevia';
+  src: url('brevia/HvDTrial_Brevia-Bold-BF6493a4067c1a1.otf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'brevia';
+  src: url('brevia/HvDTrial_Brevia-SemiBold-BF6493a40662f78.otf') format('truetype');
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bryant';
+  src: url('bryant/fonnts.com-Bryant_Bold.otf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bryant';
+  src: url('bryant/fonnts.com-Bryant_Medium.otf') format('truetype');
+  font-weight: 500; 
+  font-style: normal; 
+}
+
+@font-face {
+  font-family: 'bryant';
+  src: url('bryant/fonnts.com-Bryant.otf') format('truetype');
+  font-weight: 400; 
+  font-style: normal; 
+}
+
 :root {
   --font-size-large: 100px;
   --font-size-big: 38px;
@@ -30,6 +65,8 @@ body {
   box-sizing: border-box;
   background-color: rgb(225, 225, 225);
   position: relative;
+  font-family: 'bryant', sans-serif;
+
 }
 
 header {
@@ -44,7 +81,6 @@ header {
   transition: padding 0.2s ease;
   z-index: 1000;
   font-size: var(--font-size-xlsmall);
-
   img {
     width: 100px;
   }
@@ -106,6 +142,8 @@ h2 {
   font-weight: normal;
   font-family: brevia;
   text-align: justify;
+  font-family: 'brevia', sans-serif !important;
+  font-weight: 600;
 }
 
 
