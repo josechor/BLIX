@@ -72,3 +72,29 @@ modal.addEventListener("click", () => {
   modal.classList.remove("modal-open");
   modalImage.src = "";
 });
+
+new Swiper(".card-wrapper", {
+  loop: true,
+  speed: 500,
+  spaceBetween: 10,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+  },
+});

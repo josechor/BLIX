@@ -3,9 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BLIX</title>
+    <title>Blix Fotocreación</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="img/logotipo.png" />
+    <link rel="icon" type="image/png" href="img/favicon.jpeg" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -115,7 +127,7 @@
       </article>
     </section>
     <section class="place" id="place">
-      <div>
+      <div class="text">
         <h2>
           ¿Cómo es <br />
           el loca?
@@ -135,7 +147,39 @@
           </p>
         </div>
       </div>
-      <div class="slider"></div>
+      <div class="container swiper">
+        <div class="card-wrapper">
+          <ul class="card-list swiper-wrapper">
+            <li class="card-item swiper-slide">
+              <img src="img/web (4).jpg" alt="" class="image-click-modal" />
+            </li>
+            <li class="card-item swiper-slide">
+              <img src="img/web (9).jpg" alt="" class="image-click-modal" />
+            </li>
+            <li class="card-item swiper-slide">
+              <img src="img/web (11).jpg" alt="" class="image-click-modal" />
+            </li>
+            <li class="card-item swiper-slide">
+              <img src="img/web (12).jpg" alt="" class="image-click-modal" />
+            </li>
+            <li class="card-item swiper-slide">
+              <img src="img/web (3).jpg" alt="" class="image-click-modal" />
+            </li>
+            <li class="card-item swiper-slide">
+              <img src="img/web (1).jpg" alt="" class="image-click-modal" />
+            </li>
+            <li class="card-item swiper-slide">
+              <img src="img/web (14).jpg" alt="" class="image-click-modal" />
+            </li>
+            <li class="card-item swiper-slide">
+              <img src="img/web (15).jpg" alt="" class="image-click-modal" />
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+      </div>
     </section>
     <section class="gallery" id="gallery">
       <h2>GALERÍA</h2>
@@ -224,12 +268,16 @@
           <div>
             <span
               >Llámanos al <br /><strong
-                ><a href="tel:+34 652 448 471" target="_blank">+34 652 448 471</a></strong
+                ><a href="tel:+34 652 448 471" target="_blank"
+                  >+34 652 448 471</a
+                ></strong
               ></span
             >
             <span
               >O mandanos un mensaje a <br /><strong
-                ><a href="mailto:info@blix.es" target="_blank">info@blix.es</a></strong
+                ><a href="mailto:info@blix.es" target="_blank"
+                  >info@blix.es</a
+                ></strong
               ></span
             >
             <span
@@ -253,7 +301,8 @@
       </div>
     </div>
     <footer>
-      Copyright © <strong>Blix Fotocreación</strong> | Desarrollo web <strong>Jose Ramón Paz</strong>
+      Copyright © <strong>Blix Fotocreación</strong> | Desarrollo web
+      <strong>Jose Ramón Paz</strong>
     </footer>
     <div class="modal">
       <img src="" alt="" class="modal-image" />
