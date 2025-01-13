@@ -153,7 +153,7 @@ h2 {
 }
 
 .how-we-are {
-  background-color: rgb(74, 187, 180);
+  background-color: #896bad;
   div {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -174,16 +174,25 @@ h2 {
     div {
       display: flex;
       flex-direction: column;
-      gap: 52px;
+      gap: 15px;
       padding: 0;
       h2 {
+        margin-bottom: 52px;
         place-self: end;
         text-align: right;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        height: 350px;
+        overflow: auto;
+        padding: 25px;
       }
 
       p {
         font-size: var(--font-size-medium);
-        margin: 0;
+        margin: 0px 0px;
       }
     }
   }
@@ -292,43 +301,9 @@ h2 {
   }
 }
 
-.place {
-  display: flex;
-  flex-direction: column;
-  gap: 52px;
-  padding: 120px 0%;
-  width: 100%;
-  background-color: rgb(74, 187, 180);
-
-  .text {
-    margin: auto;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    gap: 52px;
-    h2 {
-      text-align: end;
-    }
-
-    div {
-      margin: 0;
-      width: 100%;
-    }
-
-    div p {
-      font-size: var(--font-size-medium);
-      margin: 0;
-    }
-  }
-  .slider {
-    margin: 0;
-    width: 100%;
-    background-color: #000;
-    height: 300px;
-  }
-}
 
 .gallery {
+  background-color: #896bad;
   display: flex;
   flex-direction: column;
   gap: 52px;
@@ -389,7 +364,6 @@ h2 {
   gap: 52px;
   padding: 120px 0%;
   width: 100%;
-  background-color: rgb(74, 187, 180);
 }
 
 .join-us div {
@@ -429,8 +403,9 @@ h2 {
     border-radius: 12px;
     border: none;
     font-size: var(--font-size-small);
-    width: 250px;
+    width: 350px;
     outline: none;
+    background-color: #896bad;
   }
 
   span {
@@ -443,7 +418,7 @@ h2 {
 
   button {
     padding: 12px 24px;
-    background-color: #6e368c;
+    background-color: #52bbb5;
     color: white;
     border: none;
     border-radius: 12px;
@@ -456,12 +431,18 @@ h2 {
   }
 
   button:hover {
-    background-color: #896bad;
+    background-color: #3caca6;
   }
 
   button:active {
-    background-color: #e2e1e1;
+    background-color: #74c9c4;
     color: #3c3c3b;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .join-us input {
+    width: 250px !important;
   }
 }
 
@@ -502,6 +483,14 @@ h2 {
   justify-content: center;
   flex-direction: column;
   gap: 4px;
+  font-size: var(--font-size-small);
+}
+
+#found-us div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
   font-size: var(--font-size-small);
 }
 
