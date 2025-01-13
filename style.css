@@ -181,14 +181,6 @@ h2 {
         place-self: end;
         text-align: right;
       }
-      div {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        height: 350px;
-        overflow: auto;
-        padding: 25px;
-      }
 
       p {
         font-size: var(--font-size-medium);
