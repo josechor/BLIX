@@ -293,7 +293,6 @@ h2 {
   }
 }
 
-
 .gallery {
   background-color: #896bad;
   display: flex;
@@ -368,6 +367,21 @@ h2 {
   }
   p {
     font-size: var(--font-size-medium);
+  }
+}
+
+#read-terms {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  margin: 0;
+  > img {
+    width: 15px;
+    height: 15px;
+    max-width: 15px;
+    max-height: 15px;
+    transform: translateY(-1px);
   }
 }
 
